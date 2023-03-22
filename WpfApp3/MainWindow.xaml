@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="knigi" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,4,0,0" Width="388" Height="208"/>
+        <Button Content="жанры" HorizontalAlignment="Left" Margin="12,217,0,0" VerticalAlignment="Top" Height="42" Width="194" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Автор" HorizontalAlignment="Left" Margin="211,217,0,0" VerticalAlignment="Top" Height="42" Width="189" Click="Button_Click_1"/>
+        <TextBox x:Name="BookName" HorizontalAlignment="Left" Height="28" Margin="153,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" />
+        <TextBox x:Name="ID_BOOk" HorizontalAlignment="Left" Height="28" Margin="153,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" />
+        <TextBox x:Name="ID_AUT" HorizontalAlignment="Left" Height="28" Margin="153,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" />
+        <TextBox x:Name="ID_GENRE" HorizontalAlignment="Left" Height="28" Margin="153,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" />
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="56" Margin="486,302,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="19"><Run Text="Введите id "/><Run Language="ru-ru" Text="жанра"/><LineBreak/><Run Language="ru-ru"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="45,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Введит"/><Run Text="e ID "/><Run Language="ru-ru" Text="книги"/><LineBreak/><Run Language="ru-ru"/><Run Language="ru-ru" Text=" "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="39,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21"><Run Text="Введите ID "/><Run Language="ru-ru" Text="автора"/><LineBreak/><Run Language="ru-ru"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="2,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Введите "/><Run Text="назван"/><Run Language="ru-ru" Text="ие книги"/><Run Text=" "/></TextBlock>
+        <Button Content="Удалить" HorizontalAlignment="Left" Height="56" Margin="486,360,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_3"/>
+    </Grid>
+</Window>
